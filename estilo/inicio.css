@@ -1,0 +1,126 @@
+/*Carrusel*/
+.carrusel{
+    overflow: hidden;
+    height: 600px;
+    
+}
+
+.carrusel__elemento{
+    position: relative;
+    height: 100%;
+}
+
+.carrusel__elemento:first-child{  /*El 1er elemento hijo si se mostrará*/
+    display: block;
+}
+
+.carrusel__elemento img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.carrusel__atras, .carrusel__siguiente{
+    display: block;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 55px);
+    z-index: 1;
+    transition: .5s;
+}
+
+
+
+.carrusel__atras img, .carrusel__siguiente img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Contenido*/
+.contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.secciones{
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.secciones__informacion{  /*Agregar macro*/
+    width: 50%;
+    border-radius: 10px;
+    padding: 2px 5px 2px 5px;
+    color: black;
+    text-align: center;
+    
+    align-self: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.secciones__imagenes{
+    height: 300px;
+}
+
+.secciones__imagenes img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.carrusel__atras p{
+    color: rgb(66, 66, 66);
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    z-index: 0;
+    position: relative;
+    left: 10px;
+    bottom: 170px;
+    background-color: rgba(66, 66, 66, 0.427);
+    border-radius: 5px;
+
+}
+.carrusel__atras p:hover{
+    background-color:  rgba(255, 255, 255, 0.858);
+    scale: 1.15;
+}
+
+.carrusel__atras{
+    width: 100px;
+    height: 100px;   
+}
+.carrusel__siguiente p{
+    color: rgb(66, 66, 66);
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    z-index: 0;
+    position: relative;
+    left: 1400px;    
+    bottom: 170px;
+    background-color: rgba(66, 66, 66, 0.427);
+    border-radius: 5px;
+
+}
+.carrusel__siguiente p:hover{
+    background-color: rgba(255, 254, 254, 0.858);
+    scale: 1.15;
+}
+
+.carrusel__siguiente{
+    width: 100px;
+    height: 100px;      
+}

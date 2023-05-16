@@ -1,0 +1,14 @@
+.secciones{
+    display: flex;
+    justify-content: center;
+}
+
+#bienvenida, #loquesea{
+    text-align: center;
+    font-size: 13px;
+    margin: 15px;
+    width: 250px;
+    height: 250px;
+    background-color: brown;
+    border-radius: 5px;
+}

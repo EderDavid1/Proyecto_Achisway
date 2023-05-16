@@ -1,0 +1,41 @@
+.bloque{
+    display: flex;
+    margin: 20px auto;
+}
+
+.formulario{
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.formulario__titulo{
+    text-align: center;
+}
+
+.formulario__datos{
+    margin-bottom: 10px;
+    padding: 2px 3px;
+}
+
+.formulario__etiquetas .formulario__entradas{
+    display: inline-block;
+}
+
+.formulario__entradas{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(184, 181, 181);
+    padding-left: 10px;
+}
+
+textarea{
+    background-color: rgb(184, 181, 181);
+    border-radius: 5px;
+    padding: 2px;
+}
